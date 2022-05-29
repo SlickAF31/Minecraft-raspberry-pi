@@ -2,9 +2,9 @@ from picamera import PiCamera
 from mcpi.minecraft import Minecraft
 from time import sleep
 from skimage import io, color
+import os
 
-
-#Initializare camera, efectuarea pozei si inchiderea ei
+# Initializare camera, efectuarea pozei si inchiderea ei
 camera = PiCamera()
 camera.resolution = (160, 120)  #rezolutia camerei
 camera.start_preview()
